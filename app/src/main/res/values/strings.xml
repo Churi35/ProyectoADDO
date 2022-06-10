@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">HMTHY</string>
+    <string name="title_activity_inicio">Inicio</string>
+
+    <!-- Pantalla de inicio-->
+    <string name="Iniciotext">Bienvenido a\nhelp me to help you</string>
+    <string name="TextBtn1">Iniciar Charla</string>
+    <string name="TextBtn2">Contactarnos</string>
+    <string name="TextBtn3">Salir de la aplicación</string>
+</resources>
