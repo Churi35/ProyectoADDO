@@ -3,6 +3,7 @@ package com.example.proyectoaddo;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -11,7 +12,7 @@ import android.widget.Toast;
 
 public class Inicio extends AppCompatActivity {
 
-    Button btnsalir;
+    Button btnsalir,btnCharla;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +20,15 @@ public class Inicio extends AppCompatActivity {
         cargarNombre();
 
         btnsalir = findViewById(R.id.btnSalir);
+        btnCharla = findViewById(R.id.btnCharla);
+
+        btnCharla.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(),iniciarOpciones.class);
+                startActivity(intent);
+            }
+        });
 
         btnsalir.setOnClickListener(new View.OnClickListener() {
             @Override
