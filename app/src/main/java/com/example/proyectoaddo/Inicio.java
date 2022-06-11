@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class Inicio extends AppCompatActivity {
 
-    Button btnsalir,btnCharla;
+    Button btnsalir,btnCharla,btnContacto;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,11 +21,20 @@ public class Inicio extends AppCompatActivity {
 
         btnsalir = findViewById(R.id.btnSalir);
         btnCharla = findViewById(R.id.btnCharla);
+        btnContacto = findViewById(R.id.btnContacto);
 
         btnCharla.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(view.getContext(),iniciarOpciones.class);
+                startActivity(intent);
+            }
+        });
+
+        btnContacto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(),contactarActivity.class);
                 startActivity(intent);
             }
         });
