@@ -18,4 +18,9 @@
     <string name="LabeltextC">Puedes contactarnos por medio del correo\nHtoH@gmail.com</string>
     <string name="TextBtn7">Mandar correo</string>
     <string name="AnotacionC">Los unicos correos leidos seran aquellos con el asunto de sugerencias las cuale leeremos y guardares en una bas de datos para ir mejorando HtoH\n\nGRACIAS POR SU APOYO</string>
+
+    <!-- Pantalla de hablar -->
+    <string name="LabelTextH">Muy bien\nyo te escuchare\nquerido usuario</string>
+    <string name="TxtDia">Aquí puedes contarme tu dia</string>
+    <string name="TextBtn8">Enviar mi día</string>
 </resources>
