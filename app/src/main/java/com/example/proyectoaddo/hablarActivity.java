@@ -27,7 +27,6 @@ public class hablarActivity extends AppCompatActivity {
         btnBackH.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(view.getContext(),"No importa si no quires contarme ahorita, aquí estare esperandote",Toast.LENGTH_LONG).show();
                 finish();
             }
         });
@@ -37,14 +36,18 @@ public class hablarActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String Dia = txtDia.getText().toString();
 
-                if(Dia.isEmpty())
-                    Toast.makeText(view.getContext(),"No importa si no quires contarme ahorita, aquí estare esperandote",Toast.LENGTH_LONG).show();
-                else
+                if(!Dia.isEmpty())
                     Toast.makeText(view.getContext(),"Gracias por compartir tu día conmigo :)",Toast.LENGTH_LONG).show();
 
                 finish();
             }
         });
 
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Toast.makeText(this,"No importa si no quires contarme ahorita, aquí estare esperandote",Toast.LENGTH_LONG).show();
     }
 }
